@@ -1,0 +1,90 @@
+    .items {
+        width: 1440px;
+
+        .container {
+            border-top: 1px solid #EAEAEA;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 120px;
+
+            .item-block {
+                margin-top: 45px;
+                display: flex;
+                flex-direction: column;
+                max-width: 400px;
+                height: auto;
+                border-radius: 5px;
+                overflow: hidden;
+                border: 1px solid rgba(234, 234, 234, 1);
+                cursor: default;
+                box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.05);
+
+                &-image {
+                    max-width: 400px;
+                    height: 217px;
+                }
+
+                &-info {
+                    margin: 25px 25px 20px 20px;
+
+                    .date {
+                        display: flex;
+                        color: #363636;
+                        opacity: 0.6;
+                        display: flex;
+                        align-items: center;
+
+                        .calendar {
+                            width: 13.33px;
+                        }
+
+                        span {
+                            margin-left: 10px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                        }
+                    }
+
+                    .title {
+                        font-size: 24px;
+                        line-height: 29.26px;
+                        margin-top: 24px;
+                        text-align: start;
+                        flex-wrap: wrap;
+                        color: #363636;
+                    }
+
+                    .desc {
+                        color: #363636;
+                        margin-top: 20px;
+                        text-align: start;
+                        flex-wrap: wrap;
+                    }
+
+                    .read-more {
+                        text-align: start;
+                        margin-top: 20px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #363636;
+
+                        span {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 150%;
+                        }
+
+                        .arrow {
+                            width: 15px;
+                            height: 15px;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
